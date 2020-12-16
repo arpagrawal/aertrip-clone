@@ -1,0 +1,39 @@
+.ae-name-section{
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: max-content max-content;
+    .name-info-container {
+        grid-column: 1 e("/") 4;
+        grid-row: 1;
+    }
+    .image-container {
+        grid-column: 4 e("/") 12 ;
+        grid-row: 1 e("/") 4;
+        height: 435px;
+        background: gainsboro;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .login-container {
+        grid-column: 1 e("/") 4 ;
+        grid-row: 2 ;
+        .login {
+            display: grid;
+            grid-gap: 16px;
+            .actions {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                a {
+                    justify-self: end;
+                }
+            }
+        }
+    }
+    .register-container {
+        grid-column: 1 e("/") 4;
+        grid-row: 3;
+    }
+}
